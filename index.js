@@ -67,7 +67,7 @@ emitter.on('process',function(inData) {
 function connect(opts, cb) {
     //console.log(opts)
     if(opts.number && opts.password){
-        args.push(opts.yowsup || 'yowsup-cli');//Path or global yowup-cli
+        args.push(opts.yowsup + "/yowsup-cli" || 'yowsup-cli');//Path or global yowup-cli
         args.push('demos');
         args.push('-d');// deb
         args.push('-y');
